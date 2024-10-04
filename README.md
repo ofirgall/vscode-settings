@@ -34,5 +34,10 @@ mv ~/.config/Code/User/keybindings.json_bak ~/.config/Code/User/keybindings.json
 rm -rf ~/.vscode-settings/
 ```
 
-## Plugins
+## Backup Extensions
+```bash
+code --list-extensions > ~/.vscode-settings/extensions
+```
+
+## Extensions
 TODO
