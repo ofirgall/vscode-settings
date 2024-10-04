@@ -10,8 +10,8 @@ mv ~/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings.json_bak
 git clone --depth=1 https://github.com/ofirgall/vscode-settings ~/.vscode-settings/
 
 # Create symlinks
-ln -s ~/.vscode-settings/settings.json ~/.config/Code/User/settings.json 
-ln -s ~/.vscode-settings/keybindings.json ~/.config/Code/User/keybindings.json 
+ln -s ~/.vscode-settings/settings.json ~/.config/Code/User/settings.json
+ln -s ~/.vscode-settings/keybindings.json ~/.config/Code/User/keybindings.json
 
 # Install extensions
 ~/.vscode-settings/install_extensions.sh
