@@ -59,12 +59,9 @@
     // Open devdoc of current selection
     { "key": "f1", "command": "extension.devDocs", "when": "editorTextFocus" },
 
-    ///// AceJump (like vimium) /////
-    // { "key": "alt+j", "command": "extension.aceJump" },
-    // { "key": "alt+f", "command": "extension.aceJump.multiChar" },
-    // { "key": "alt+l", "command": "extension.aceJump.line" },
-    // { "key": "alt+shift+j", "command": "extension.aceJump.selection" },
-
+    ///// Find => Jump /////
+    { "key": "alt+f", "command": "findJump.activate" },
+    { "key": "alt+shift+f", "command": "findJump.activateWithSelection" },
 
     //////// Fixes ////////
     // Fix alt+enter on empty search results. goes back to editor instead of applying on last search result

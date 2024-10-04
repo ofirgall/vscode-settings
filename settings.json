@@ -34,4 +34,9 @@
     // Move by symbol
     "gotoNextPreviousMember.symbolKinds": ["class", "enum", "event", "function", "interface", "method", "module", "namespace"],
 
+    // Find => Jump
+    // "findJump.dimWhenActive": true,
+
+    ////////////////////////////////////////////////////////////////
+
 }
