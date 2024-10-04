@@ -17,6 +17,11 @@ ln -s ~/.vscode-settings/keybindings.json ~/.config/Code/User/keybindings.json
 ~/.vscode-settings/install_extensions.sh
 ```
 
+Recommended for sublime users:
+```bash
+code --install-extension ms-vscode.sublime-keybindings --force
+```
+
 ## Uninstall (Linux/MacOS)
 The extensions aren't removed.
 
