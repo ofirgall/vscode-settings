@@ -39,5 +39,10 @@ rm -rf ~/.vscode-settings/
 code --list-extensions > ~/.vscode-settings/extensions
 ```
 
+Optional: enable pre-commit hook to backup extensions:
+```bash
+cd ~/.vscode-settings/ && git config core.hooksPath hooks
+```
+
 ## Extensions
 TODO
