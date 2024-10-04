@@ -34,8 +34,4 @@
     // Move by symbol
     "gotoNextPreviousMember.symbolKinds": ["class", "enum", "event", "function", "interface", "method", "module", "namespace"],
 
-    // AceJump
-    "aceJump.placeholder.backgroundColor": "#feda31",
-    "aceJump.placeholder.color": "#4a400e",
-    "aceJump.placeholder.upperCase": false,
 }
