@@ -11,21 +11,9 @@
     ////////////////
 
     
-    // AceJump (like vimium)
-    { "key": "alt+j", "command": "extension.aceJump" },
-    { "key": "alt+f", "command": "extension.aceJump.multiChar" },
-    { "key": "alt+l", "command": "extension.aceJump.line" },
-    { "key": "alt+shift+j", "command": "extension.aceJump.selection" },
-
     ////// LSP //////
     // Show/Hide Diagnostics Panel
     { "key": "ctrl+shift+s", "command": "workbench.actions.view.problems", "when": "workbench.panel.markers.view.active" },
-    // Find refernces
-    { "key": "f3", "command": "references-view.findReferences", "when": "editorHasReferenceProvider" },
-    // Show hover
-    { "key": "shift+space", "command": "editor.action.showHover", "when": "editorTextFocus"},
-    // Quick fix
-    { "key": "f4", "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
     
     ////// Code Stream //////
     { "key": "win+enter", "command": "codestream.newComment", "when": "codestream:status == 'signedIn'" }

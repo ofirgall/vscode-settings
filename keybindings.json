@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
+    /// Misc ///
     // Open terminal
     { "key": "win+t", "command": "workbench.action.terminal.toggleTerminal", "when": "terminal.active" },
 
@@ -9,6 +10,24 @@
 
     // Select current selection. press again to expand more
     { "key": "alt+s", "command": "expand-selection-to-scope.expand", "when": "editorTextFocus" },
+
+    /// Intelisense (LSP) ///
+    // Show hover
+    { "key": "shift+space", "command": "editor.action.showHover", "when": "editorTextFocus"},
+
+    // Goto Definition
+    { "key": "alt+d","command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus" },
+
+    // Goto and Find References (usages)
+    { "key": "alt+r","command": "editor.action.goToReferences", "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor" },
+    { "key": "alt+shift+r","command": "references-view.findReferences", "when": "editorFocus && editorHasReferenceProvider" },
+
+    // Goto and Find Implementations
+    { "key": "alt+i", "command": "editor.action.peekImplementation", "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor" },
+    { "key": "alt+shift+i","command": "references-view.findImplementations", "when": "editorFocus && editorHasImplementationProvider" },
+
+    // Quick fix
+    { "key": "alt+q", "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
 
     /// Create & Control panes ///
     // Create vertical pane
@@ -25,10 +44,10 @@
     { "key": "alt+down", "command": "workbench.action.focusBelowGroup" },
 
     // Carry file through panes with alt+shift+right/left
-    { "key": "shift+alt+right", "command": "workbench.action.moveEditorToRightGroup" },
-    { "key": "shift+alt+left", "command": "workbench.action.moveEditorToLeftGroup" },
-    { "key": "shift+alt+up", "command": "workbench.action.moveEditorToAboveGroup" },
-    { "key": "shift+alt+down", "command": "workbench.action.moveEditorToBelowGroup" },
+    { "key": "alt+win+right", "command": "workbench.action.moveEditorToRightGroup" },
+    { "key": "alt+win+left", "command": "workbench.action.moveEditorToLeftGroup" },
+    { "key": "alt+win+up", "command": "workbench.action.moveEditorToAboveGroup" },
+    { "key": "alt+win+down", "command": "workbench.action.moveEditorToBelowGroup" },
 
     //////// Extensions ////////
 
@@ -36,14 +55,21 @@
     { "key": "ctrl+win+up", "command": "gotoNextPreviousMember.previousMember" },
     { "key": "ctrl+win+down", "command": "gotoNextPreviousMember.nextMember" },
 
+    //////// Devdocs ////////
+    // Open devdoc of current selection
+    { "key": "f1", "command": "extension.devDocs", "when": "editorTextFocus" },
+
+    ///// AceJump (like vimium) /////
+    // { "key": "alt+j", "command": "extension.aceJump" },
+    // { "key": "alt+f", "command": "extension.aceJump.multiChar" },
+    // { "key": "alt+l", "command": "extension.aceJump.line" },
+    // { "key": "alt+shift+j", "command": "extension.aceJump.selection" },
+
+
     //////// Fixes ////////
     // Fix alt+enter on empty search results. goes back to editor instead of applying on last search result
     { "key": "alt+enter", "command": "commands.run", "args": ["search.action.openInEditor", "workbench.view.explorer"], "when": "hasSearchResult && searchViewletFocus" },
 
     // Open Search All Result inside "Open in Editor"
     { "key": "enter", "command": "editor.action.revealDefinition", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && inSearchEditor" },
-
-    //////// Devdocs ////////
-    // Open devdoc of current selection
-    { "key": "alt+d", "command": "extension.devDocs", "when": "editorTextFocus" },
 ]
