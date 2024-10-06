@@ -9,7 +9,7 @@
     { "key": "ctrl+alt+right", "command": "workbench.action.navigateForward", "when": "canNavigateForward" },
 
     // Select current selection. press again to expand more
-    { "key": "alt+s", "command": "expand-selection-to-scope.expand", "when": "editorTextFocus" },
+    { "key": "alt+m", "command": "expand-selection-to-scope.expand", "when": "editorTextFocus" },
 
     /// Intelisense (LSP) ///
     // Show hover
@@ -25,6 +25,11 @@
     // Goto and Find Implementations
     { "key": "alt+i", "command": "editor.action.peekImplementation", "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor" },
     { "key": "alt+shift+i","command": "references-view.findImplementations", "when": "editorFocus && editorHasImplementationProvider" },
+
+    // Find symbol in current file
+    { "key": "alt+s", "command": "workbench.action.gotoSymbol", "when": "!accessibilityHelpIsShown && !accessibleViewIsShown" },
+    // Find symbol in workspace
+    { "key": "alt+shift+s", "command": "workbench.action.showAllSymbols", "when": "!accessibilityHelpIsShown && !accessibleViewIsShown" },
 
     // Quick fix
     { "key": "alt+q", "command": "editor.action.quickFix", "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
